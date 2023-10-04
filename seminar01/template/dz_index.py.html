@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<h1> jacket - {% for item in context.jacket %}
+    {{ item }}
+    {% endfor %}
+    cardigan - {% for item in context.cardigan %}
+    {{ item }}
+    {% endfor %}
+    footwear - {% for item in context.footwear %}
+    {{ item }}
+    {% endfor %}
+    accessories - {% for item in context.accessories %}
+    {{ item }}
+    {% endfor %}
+</h1>
+<h2>
+</h2>
+
+</body>
+</html>
